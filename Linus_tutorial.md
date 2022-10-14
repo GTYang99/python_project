@@ -1,9 +1,6 @@
-This is an H1
+命令列
 =============
 
-This is an H2
--------------
-命令列
 建立github SSH keys
 使用SSH學習命令列
 使用apt-get安裝和移除軟體
