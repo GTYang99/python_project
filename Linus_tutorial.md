@@ -1,10 +1,11 @@
 命令列
 =============
-
+<ol>
 建立github SSH keys
 使用SSH學習命令列
 使用apt-get安裝和移除軟體
 安裝vim文字編輯器
+</ol>
 
 建立github SSH keys
 在/home/pi建立目錄 .ssh
