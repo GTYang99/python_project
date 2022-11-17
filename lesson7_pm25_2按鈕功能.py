@@ -12,11 +12,12 @@ class Windows(tk.Tk):
         mainFrame = tk.Frame(self)                                                                     #增加按鈕框架
         # 增加按鈕功能
         for index,county_str in enumerate(self.county):
-            btn = tk.Button(mainFrame,text=county_str,font=("arial",16),padx=10,pady=10).grid(row=index//3,column= index%3,padx=10,pady=10)
+            btn = tk.Button(mainFrame,text=county_str,font=("arial",16),padx=10,pady=10)#.grid(row=index//3,column= index%3,padx=10,pady=10)
             # 按鈕按照讀出來的"名稱(county_str)"排列，排列方式對照index對"3"的商與餘數排列
             btn.bind("<Button>",self.buttonclick)
             btn.grid(row=index//3,column= index%3,padx=10,pady=10)
             # 自己寫的，不知道為何這段沒有跟btn有同樣的屬性(bind、grid沒有變色)
+            # 因為上面的.grid不能再建立物件的時候寫上
         mainFrame.pack()
 
     def buttonclick(self,event):
